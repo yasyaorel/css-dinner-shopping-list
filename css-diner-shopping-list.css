@@ -1,0 +1,122 @@
+*{transition: all.1s ease-in;}
+ 
+html:before, html:after, body:before { 
+	content:""; 
+	position:fixed; 
+	z-index:-1; 
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	border:18px 
+	solid #fff; 
+} 
+html:after {
+	z-index:10; 
+	top:auto; 
+	border-width:0 0 10px; 
+} 
+body:before { 
+	z-index:10; 
+	bottom:auto; 
+	border-width:10px; 
+}
+@font-face {
+	font-family: Trebuchet MS;
+	src: url(Trebuchet MS.ttf);
+}
+body {
+	background-color: #3B3F45;
+	font-family: Arial, sans-serif;
+}
+.d1 {
+	background-color: #4a4f56;
+	color: #EB7E7F;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+.d1::first-line {
+	font-size: 28px;
+	font-weight: bold;
+}	
+div.counter {
+		max-width: 500px;
+			margin: 0 auto;
+}
+div.buttonstyle {
+		max-width: 500px;
+		margin: 0 auto;
+}
+.button {
+	width: 500px;
+	height: 50px;
+	background-color: #4A4F56;
+	color: #EB7E7F;
+	font-size: 18px;
+	border: 0; 
+}
+.item1::after {
+	content: "(for the next lesson about CSS)";
+	color: #a3a0b5;
+	font-size:13px;
+	font-family: Trebuchet MS;
+}
+.item2::after {
+	content: "(for more CSS manipulations)";
+	color: #a3a0b5;
+	font-size:13px;
+	font-family: Trebuchet MS;
+}
+.item3::after {
+	content: "(because they are awesome)";
+	color: #a3a0b5;
+	font-size:13px;
+	font-family: Trebuchet MS;
+}
+.item4::after {
+	content: "(hm...they always disappear)";
+	color: #a3a0b5;
+	font-size:13px;
+	font-family: Trebuchet MS;
+}
+.item6::after {
+	content: "(for my friends)";
+	color: #a3a0b5;
+	font-size:13px;
+	font-family: Trebuchet MS;
+}
+div.checkbox {
+	padding: 15px;
+	color: #f9f9f9;
+	font-size: 18px;
+	cursor: pointer;
+}
+div.counter:nth-child(odd) {
+	background-color: #88839E;              
+}     
+div.counter:nth-child(even) {
+    background-color: #7a7593;
+}
+div.checkbox:hover {
+	background-color: #625e77;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;	
+}
+div.checkbox:active {
+	color: #a3a0b5;
+	background-color: #EB7E7F;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;	
+}
+input[type=checkbox]:checked{
+     transform: scale(1.3); 
+}
+input[type=checkbox]{
+     transform: scale(1.3);   	
+}
+input:checked + span {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
